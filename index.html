@@ -184,6 +184,583 @@
       </div>
     </div>
     
+    <!-- Modal especial para o mapa do biogás -->
+    <div class="modal fade" id="modalMapaBiogas" tabindex="-1" aria-labelledby="modalMapaBiogasLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header bg-info text-white">
+            <h5 class="modal-title" id="modalMapaBiogasLabel">Mapa do Biogás no Brasil</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+          </div>
+          <div class="modal-body text-center">
+            <img src="src/Mapa do Biogás.png" alt="Mapa do Biogás" class="img-fluid" style="max-height: 500px;">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" id="btn-ir-para-parte3" data-bs-dismiss="modal">Ir para a Parte 3</button>
+          </div>
+        </div>
+      </div>
+    </div>
+        
+    <section id="part3" class="collapse card p-5 m-5" data-bs-theme="dark" style="width: 600px; display: none;">
+        <h1>CAÇA AO TESOURO: MISSÃO SUSTENTÁVEL – O FUTURO EM SUAS MÃOS</h1>
+        <h3>Etapa 3: Biogás - Energia que vem do Lixo</h3>
+        <hr>
+        <iframe width="500" height="400" src="https://www.youtube.com/embed/vVUYSCJR9xg" title="Aterro de São Paulo trata lixo orgânico com biogás e gera energia" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <hr>
+        <div class="card-body">
+            <h2>1. O que é o biogás?</h2>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio1p3q1" name="p3q1" value="option1">
+                <label class="form-check-label" for="radio1p3q1">Um gás inflamável produzido pela decomposição de matéria orgânica na ausência de oxigênio.</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio2p3q1" name="p3q1" value="option2">
+                <label class="form-check-label" for="radio2p3q1">Um gás utilizado apenas para encher balões de festa.</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio3p3q1" name="p3q1" value="option3">
+                <label class="form-check-label" for="radio3p3q1">Um gás tóxico liberado por carros movidos a gasolina.</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio4p3q1" name="p3q1" value="option4">
+                <label class="form-check-label" for="radio4p3q1">Um gás utilizado apenas em extintores de incêndio.</label>
+            </div>
+            <hr>
+            <h2>2. Quais gases são liberados durante o processo?</h2>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio1p3q2" name="p3q2" value="option1">
+                <label class="form-check-label" for="radio1p3q2">Metano e dióxido de carbono.</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio2p3q2" name="p3q2" value="option2">
+                <label class="form-check-label" for="radio2p3q2">Oxigênio e ozônio.</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio3p3q2" name="p3q2" value="option3">
+                <label class="form-check-label" for="radio3p3q2">Hidrogênio e nitrogênio.</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio4p3q2" name="p3q2" value="option4">
+                <label class="form-check-label" for="radio4p3q2">Gás carbônico e vapor de água.</label>
+            </div>
+            <hr>
+            <h2>3. Onde o biogás pode ser utilizado?</h2>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio1p3q3" name="p3q3" value="option1">
+                <label class="form-check-label" for="radio1p3q3">Na geração de energia elétrica, combustível para veículos e aquecimento.</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio2p3q3" name="p3q3" value="option2">
+                <label class="form-check-label" for="radio2p3q3">Apenas para resfriar ambientes industriais.</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio3p3q3" name="p3q3" value="option3">
+                <label class="form-check-label" for="radio3p3q3">Somente para produção de fertilizantes químicos.</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio4p3q3" name="p3q3" value="option4">
+                <label class="form-check-label" for="radio4p3q3">Exclusivamente em laboratórios de pesquisa.</label>
+            </div>
+            <hr>
+            <button type="submit" class="btn w-100 btn-primary">ENVIAR</button>
+        </div>
+    </section>
+
+    <!-- Modal de erro -->
+    <div class="modal fade" id="modalErro" tabindex="-1" aria-labelledby="modalErroLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-danger text-white">
+            <h5 class="modal-title" id="modalErroLabel">Respostas Incorretas</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+          </div>
+          <div class="modal-body">
+            Uma ou mais respostas estão incorretas. Tente novamente!
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Modal de acerto -->
+    <div class="modal fade" id="modalAcerto" tabindex="-1" aria-labelledby="modalAcertoLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-success text-white">
+            <h5 class="modal-title" id="modalAcertoLabel">Parabéns!</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+          </div>
+          <div class="modal-body">
+            Todas as respostas estão corretas! Você concluiu esta etapa.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Modal especial para o mapa do biogás -->
+    <div class="modal fade" id="modalMapaBiogas" tabindex="-1" aria-labelledby="modalMapaBiogasLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header bg-info text-white">
+            <h5 class="modal-title" id="modalMapaBiogasLabel">Mapa do Biogás no Brasil</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+          </div>
+          <div class="modal-body text-center">
+            <img src="src/Mapa do Biogás.png" alt="Mapa do Biogás" class="img-fluid" style="max-height: 500px;">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" id="btn-ir-para-parte3" data-bs-dismiss="modal">Ir para a Parte 3</button>
+          </div>
+        </div>
+      </div>
+    </div>
+        
+    <section id="part3" class="collapse card p-5 m-5" data-bs-theme="dark" style="width: 600px; display: none;">
+        <h1>CAÇA AO TESOURO: MISSÃO SUSTENTÁVEL – O FUTURO EM SUAS MÃOS</h1>
+        <h3>Etapa 3: Biogás - Energia que vem do Lixo</h3>
+        <hr>
+        <iframe width="500" height="400" src="https://www.youtube.com/embed/vVUYSCJR9xg" title="Aterro de São Paulo trata lixo orgânico com biogás e gera energia" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <hr>
+        <div class="card-body">
+            <h2>1. O que é o biogás?</h2>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio1p3q1" name="p3q1" value="option1">
+                <label class="form-check-label" for="radio1p3q1">Um gás inflamável produzido pela decomposição de matéria orgânica na ausência de oxigênio.</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio2p3q1" name="p3q1" value="option2">
+                <label class="form-check-label" for="radio2p3q1">Um gás utilizado apenas para encher balões de festa.</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio3p3q1" name="p3q1" value="option3">
+                <label class="form-check-label" for="radio3p3q1">Um gás tóxico liberado por carros movidos a gasolina.</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio4p3q1" name="p3q1" value="option4">
+                <label class="form-check-label" for="radio4p3q1">Um gás utilizado apenas em extintores de incêndio.</label>
+            </div>
+            <hr>
+            <h2>2. Quais gases são liberados durante o processo?</h2>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio1p3q2" name="p3q2" value="option1">
+                <label class="form-check-label" for="radio1p3q2">Metano e dióxido de carbono.</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio2p3q2" name="p3q2" value="option2">
+                <label class="form-check-label" for="radio2p3q2">Oxigênio e ozônio.</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio3p3q2" name="p3q2" value="option3">
+                <label class="form-check-label" for="radio3p3q2">Hidrogênio e nitrogênio.</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio4p3q2" name="p3q2" value="option4">
+                <label class="form-check-label" for="radio4p3q2">Gás carbônico e vapor de água.</label>
+            </div>
+            <hr>
+            <h2>3. Onde o biogás pode ser utilizado?</h2>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio1p3q3" name="p3q3" value="option1">
+                <label class="form-check-label" for="radio1p3q3">Na geração de energia elétrica, combustível para veículos e aquecimento.</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio2p3q3" name="p3q3" value="option2">
+                <label class="form-check-label" for="radio2p3q3">Apenas para resfriar ambientes industriais.</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio3p3q3" name="p3q3" value="option3">
+                <label class="form-check-label" for="radio3p3q3">Somente para produção de fertilizantes químicos.</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio4p3q3" name="p3q3" value="option4">
+                <label class="form-check-label" for="radio4p3q3">Exclusivamente em laboratórios de pesquisa.</label>
+            </div>
+            <hr>
+            <button type="submit" class="btn w-100 btn-primary">ENVIAR</button>
+        </div>
+    </section>
+
+    <!-- Modal de erro -->
+    <div class="modal fade" id="modalErro" tabindex="-1" aria-labelledby="modalErroLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-danger text-white">
+            <h5 class="modal-title" id="modalErroLabel">Respostas Incorretas</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+          </div>
+          <div class="modal-body">
+            Uma ou mais respostas estão incorretas. Tente novamente!
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Modal de acerto -->
+    <div class="modal fade" id="modalAcerto" tabindex="-1" aria-labelledby="modalAcertoLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-success text-white">
+            <h5 class="modal-title" id="modalAcertoLabel">Parabéns!</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+          </div>
+          <div class="modal-body">
+            Todas as respostas estão corretas! Você concluiu esta etapa.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Modal especial para o mapa do biogás -->
+    <div class="modal fade" id="modalMapaBiogas" tabindex="-1" aria-labelledby="modalMapaBiogasLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header bg-info text-white">
+            <h5 class="modal-title" id="modalMapaBiogasLabel">Mapa do Biogás no Brasil</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+          </div>
+          <div class="modal-body text-center">
+            <img src="src/Mapa do Biogás.png" alt="Mapa do Biogás" class="img-fluid" style="max-height: 500px;">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" id="btn-ir-para-parte3" data-bs-dismiss="modal">Ir para a Parte 3</button>
+          </div>
+        </div>
+      </div>
+    </div>
+        
+    <section id="part3" class="collapse card p-5 m-5" data-bs-theme="dark" style="width: 600px; display: none;">
+        <h1>CAÇA AO TESOURO: MISSÃO SUSTENTÁVEL – O FUTURO EM SUAS MÃOS</h1>
+        <h3>Etapa 3: Biogás - Energia que vem do Lixo</h3>
+        <hr>
+        <iframe width="500" height="400" src="https://www.youtube.com/embed/vVUYSCJR9xg" title="Aterro de São Paulo trata lixo orgânico com biogás e gera energia" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <hr>
+        <div class="card-body">
+            <h2>1. O que é o biogás?</h2>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio1p3q1" name="p3q1" value="option1">
+                <label class="form-check-label" for="radio1p3q1">Um gás inflamável produzido pela decomposição de matéria orgânica na ausência de oxigênio.</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio2p3q1" name="p3q1" value="option2">
+                <label class="form-check-label" for="radio2p3q1">Um gás utilizado apenas para encher balões de festa.</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio3p3q1" name="p3q1" value="option3">
+                <label class="form-check-label" for="radio3p3q1">Um gás tóxico liberado por carros movidos a gasolina.</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio4p3q1" name="p3q1" value="option4">
+                <label class="form-check-label" for="radio4p3q1">Um gás utilizado apenas em extintores de incêndio.</label>
+            </div>
+            <hr>
+            <h2>2. Quais gases são liberados durante o processo?</h2>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio1p3q2" name="p3q2" value="option1">
+                <label class="form-check-label" for="radio1p3q2">Metano e dióxido de carbono.</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio2p3q2" name="p3q2" value="option2">
+                <label class="form-check-label" for="radio2p3q2">Oxigênio e ozônio.</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio3p3q2" name="p3q2" value="option3">
+                <label class="form-check-label" for="radio3p3q2">Hidrogênio e nitrogênio.</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio4p3q2" name="p3q2" value="option4">
+                <label class="form-check-label" for="radio4p3q2">Gás carbônico e vapor de água.</label>
+            </div>
+            <hr>
+            <h2>3. Onde o biogás pode ser utilizado?</h2>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio1p3q3" name="p3q3" value="option1">
+                <label class="form-check-label" for="radio1p3q3">Na geração de energia elétrica, combustível para veículos e aquecimento.</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio2p3q3" name="p3q3" value="option2">
+                <label class="form-check-label" for="radio2p3q3">Apenas para resfriar ambientes industriais.</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio3p3q3" name="p3q3" value="option3">
+                <label class="form-check-label" for="radio3p3q3">Somente para produção de fertilizantes químicos.</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio4p3q3" name="p3q3" value="option4">
+                <label class="form-check-label" for="radio4p3q3">Exclusivamente em laboratórios de pesquisa.</label>
+            </div>
+            <hr>
+            <button type="submit" class="btn w-100 btn-primary">ENVIAR</button>
+        </div>
+    </section>
+
+    <!-- Modal de erro -->
+    <div class="modal fade" id="modalErro" tabindex="-1" aria-labelledby="modalErroLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-danger text-white">
+            <h5 class="modal-title" id="modalErroLabel">Respostas Incorretas</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+          </div>
+          <div class="modal-body">
+            Uma ou mais respostas estão incorretas. Tente novamente!
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Modal de acerto -->
+    <div class="modal fade" id="modalAcerto" tabindex="-1" aria-labelledby="modalAcertoLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-success text-white">
+            <h5 class="modal-title" id="modalAcertoLabel">Parabéns!</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+          </div>
+          <div class="modal-body">
+            Todas as respostas estão corretas! Você concluiu esta etapa.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Modal especial para o mapa do biogás -->
+    <div class="modal fade" id="modalMapaBiogas" tabindex="-1" aria-labelledby="modalMapaBiogasLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header bg-info text-white">
+            <h5 class="modal-title" id="modalMapaBiogasLabel">Mapa do Biogás no Brasil</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+          </div>
+          <div class="modal-body text-center">
+            <img src="src/Mapa do Biogás.png" alt="Mapa do Biogás" class="img-fluid" style="max-height: 500px;">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" id="btn-ir-para-parte3" data-bs-dismiss="modal">Ir para a Parte 3</button>
+          </div>
+        </div>
+      </div>
+    </div>
+        
+    <section id="part3" class="collapse card p-5 m-5" data-bs-theme="dark" style="width: 600px; display: none;">
+        <h1>CAÇA AO TESOURO: MISSÃO SUSTENTÁVEL – O FUTURO EM SUAS MÃOS</h1>
+        <h3>Etapa 3: Biogás - Energia que vem do Lixo</h3>
+        <hr>
+        <iframe width="500" height="400" src="https://www.youtube.com/embed/vVUYSCJR9xg" title="Aterro de São Paulo trata lixo orgânico com biogás e gera energia" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <hr>
+        <div class="card-body">
+            <h2>1. O que é o biogás?</h2>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio1p3q1" name="p3q1" value="option1">
+                <label class="form-check-label" for="radio1p3q1">Um gás inflamável produzido pela decomposição de matéria orgânica na ausência de oxigênio.</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio2p3q1" name="p3q1" value="option2">
+                <label class="form-check-label" for="radio2p3q1">Um gás utilizado apenas para encher balões de festa.</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio3p3q1" name="p3q1" value="option3">
+                <label class="form-check-label" for="radio3p3q1">Um gás tóxico liberado por carros movidos a gasolina.</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio4p3q1" name="p3q1" value="option4">
+                <label class="form-check-label" for="radio4p3q1">Um gás utilizado apenas em extintores de incêndio.</label>
+            </div>
+            <hr>
+            <h2>2. Quais gases são liberados durante o processo?</h2>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio1p3q2" name="p3q2" value="option1">
+                <label class="form-check-label" for="radio1p3q2">Metano e dióxido de carbono.</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio2p3q2" name="p3q2" value="option2">
+                <label class="form-check-label" for="radio2p3q2">Oxigênio e ozônio.</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio3p3q2" name="p3q2" value="option3">
+                <label class="form-check-label" for="radio3p3q2">Hidrogênio e nitrogênio.</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio4p3q2" name="p3q2" value="option4">
+                <label class="form-check-label" for="radio4p3q2">Gás carbônico e vapor de água.</label>
+            </div>
+            <hr>
+            <h2>3. Onde o biogás pode ser utilizado?</h2>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio1p3q3" name="p3q3" value="option1">
+                <label class="form-check-label" for="radio1p3q3">Na geração de energia elétrica, combustível para veículos e aquecimento.</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio2p3q3" name="p3q3" value="option2">
+                <label class="form-check-label" for="radio2p3q3">Apenas para resfriar ambientes industriais.</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio3p3q3" name="p3q3" value="option3">
+                <label class="form-check-label" for="radio3p3q3">Somente para produção de fertilizantes químicos.</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio4p3q3" name="p3q3" value="option4">
+                <label class="form-check-label" for="radio4p3q3">Exclusivamente em laboratórios de pesquisa.</label>
+            </div>
+            <hr>
+            <button type="submit" class="btn w-100 btn-primary">ENVIAR</button>
+        </div>
+    </section>
+
+    <!-- Modal de erro -->
+    <div class="modal fade" id="modalErro" tabindex="-1" aria-labelledby="modalErroLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-danger text-white">
+            <h5 class="modal-title" id="modalErroLabel">Respostas Incorretas</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+          </div>
+          <div class="modal-body">
+            Uma ou mais respostas estão incorretas. Tente novamente!
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Modal de acerto -->
+    <div class="modal fade" id="modalAcerto" tabindex="-1" aria-labelledby="modalAcertoLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-success text-white">
+            <h5 class="modal-title" id="modalAcertoLabel">Parabéns!</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+          </div>
+          <div class="modal-body">
+            Todas as respostas estão corretas! Você concluiu esta etapa.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Modal especial para o mapa do biogás -->
+    <div class="modal fade" id="modalMapaBiogas" tabindex="-1" aria-labelledby="modalMapaBiogasLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header bg-info text-white">
+            <h5 class="modal-title" id="modalMapaBiogasLabel">Mapa do Biogás no Brasil</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+          </div>
+          <div class="modal-body text-center">
+            <img src="src/Mapa do Biogás.png" alt="Mapa do Biogás" class="img-fluid" style="max-height: 500px;">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" id="btn-ir-para-parte3" data-bs-dismiss="modal">Ir para a Parte 3</button>
+          </div>
+        </div>
+      </div>
+    </div>
+        
+    <section id="part3" class="collapse card p-5 m-5" data-bs-theme="dark" style="width: 600px; display: none;">
+        <h1>CAÇA AO TESOURO: MISSÃO SUSTENTÁVEL – O FUTURO EM SUAS MÃOS</h1>
+        <h3>Etapa 3: Biogás - Energia que vem do Lixo</h3>
+        <hr>
+        <iframe width="500" height="400" src="https://www.youtube.com/embed/vVUYSCJR9xg" title="Aterro de São Paulo trata lixo orgânico com biogás e gera energia" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <hr>
+        <div class="card-body">
+            <h2>1. O que é o biogás?</h2>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio1p3q1" name="p3q1" value="option1">
+                <label class="form-check-label" for="radio1p3q1">Um gás inflamável produzido pela decomposição de matéria orgânica na ausência de oxigênio.</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio2p3q1" name="p3q1" value="option2">
+                <label class="form-check-label" for="radio2p3q1">Um gás utilizado apenas para encher balões de festa.</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio3p3q1" name="p3q1" value="option3">
+                <label class="form-check-label" for="radio3p3q1">Um gás tóxico liberado por carros movidos a gasolina.</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio4p3q1" name="p3q1" value="option4">
+                <label class="form-check-label" for="radio4p3q1">Um gás utilizado apenas em extintores de incêndio.</label>
+            </div>
+            <hr>
+            <h2>2. Quais gases são liberados durante o processo?</h2>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio1p3q2" name="p3q2" value="option1">
+                <label class="form-check-label" for="radio1p3q2">Metano e dióxido de carbono.</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio2p3q2" name="p3q2" value="option2">
+                <label class="form-check-label" for="radio2p3q2">Oxigênio e ozônio.</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio3p3q2" name="p3q2" value="option3">
+                <label class="form-check-label" for="radio3p3q2">Hidrogênio e nitrogênio.</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio4p3q2" name="p3q2" value="option4">
+                <label class="form-check-label" for="radio4p3q2">Gás carbônico e vapor de água.</label>
+            </div>
+            <hr>
+            <h2>3. Onde o biogás pode ser utilizado?</h2>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio1p3q3" name="p3q3" value="option1">
+                <label class="form-check-label" for="radio1p3q3">Na geração de energia elétrica, combustível para veículos e aquecimento.</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio2p3q3" name="p3q3" value="option2">
+                <label class="form-check-label" for="radio2p3q3">Apenas para resfriar ambientes industriais.</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio3p3q3" name="p3q3" value="option3">
+                <label class="form-check-label" for="radio3p3q3">Somente para produção de fertilizantes químicos.</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio4p3q3" name="p3q3" value="option4">
+                <label class="form-check-label" for="radio4p3q3">Exclusivamente em laboratórios de pesquisa.</label>
+            </div>
+            <hr>
+            <button type="submit" class="btn w-100 btn-primary">ENVIAR</button>
+        </div>
+    </section>
+
+    <!-- Modal final -->
+    <div class="modal fade" id="modalFinal" tabindex="-1" aria-labelledby="modalFinalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header bg-success text-dark">
+            <h5 class="modal-title" id="modalFinalLabel">TESOURO FINAL: O Futuro em Suas Mãos</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+          </div>
+          <div class="modal-body">
+            Responda o questionário e obtenha sua nota!
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script>
     // Validação da etapa 1 (já existente)
     document.querySelectorAll('#part1 button[type="submit"]')[0].addEventListener('click', function(e) {
@@ -212,7 +789,7 @@
         }
     });
 
-    // Validação da etapa 2
+    // Validação da etapa 2 com modal do mapa do biogás
     document.querySelectorAll('#part2 button[type="submit"]')[0].addEventListener('click', function(e) {
         e.preventDefault();
 
@@ -220,19 +797,40 @@
         const p2q2 = document.querySelector('input[name="p2q2"]:checked');
         const p2q3 = document.querySelector('input[name="p2q3"]:checked');
 
-        // Respostas corretas: p2q1 = option1, p2q2 = option1, p2q3 = option1
         if (p2q1 && p2q2 && p2q3 &&
             p2q1.value === "option1" &&
             p2q2.value === "option1" &&
             p2q3.value === "option1") {
-            var modalAcerto = new bootstrap.Modal(document.getElementById('modalAcerto'));
-            modalAcerto.show();
+            var modalMapa = new bootstrap.Modal(document.getElementById('modalMapaBiogas'));
+            modalMapa.show();
 
-            document.getElementById('modalAcerto').addEventListener('hidden.bs.modal', function handler() {
+            // Ao fechar o modal do mapa, mostra a parte 3
+            document.getElementById('btn-ir-para-parte3').addEventListener('click', function handler() {
                 document.getElementById('part2').style.display = 'none';
-                // Aqui você pode mostrar a próxima etapa, se desejar
-                document.getElementById('modalAcerto').removeEventListener('hidden.bs.modal', handler);
+                document.getElementById('part3').classList.remove('collapse');
+                document.getElementById('part3').style.display = 'block';
+                document.getElementById('btn-ir-para-parte3').removeEventListener('click', handler);
             });
+        } else {
+            var modalErro = new bootstrap.Modal(document.getElementById('modalErro'));
+            modalErro.show();
+        }
+    });
+
+    // Validação da etapa 3
+    document.querySelectorAll('#part3 button[type="submit"]')[0].addEventListener('click', function(e) {
+        e.preventDefault();
+
+        const p3q1 = document.querySelector('input[name="p3q1"]:checked');
+        const p3q2 = document.querySelector('input[name="p3q2"]:checked');
+        const p3q3 = document.querySelector('input[name="p3q3"]:checked');
+
+        if (p3q1 && p3q2 && p3q3 &&
+            p3q1.value === "option1" &&
+            p3q2.value === "option1" &&
+            p3q3.value === "option1") {
+            var modalFinal = new bootstrap.Modal(document.getElementById('modalFinal'));
+            modalFinal.show();
         } else {
             var modalErro = new bootstrap.Modal(document.getElementById('modalErro'));
             modalErro.show();
